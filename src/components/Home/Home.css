@@ -1,5 +1,5 @@
 .bg-cover {
-  background: url("../../assets/abstract_3.png");
+  background: url("../../assets/mark.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
   align-self: center; }
 
-h1 {
+#main-title {
   color: #fff;
   background-color: rgba(48, 255, 165, 0.1);
   width: 500px;
@@ -30,7 +30,7 @@ g1 {
 .style {
   transition: box-shadow 3s; }
   .style:hover, .style:focus {
-    box-shadow: inset 0 -3.5em 0 0 #CB1957;
+    box-shadow: inset 0 -3.5em 0 0 #34495E;
     -webkit-animation-name: shake;
     -webkit-animation-duration: 0.8s;
     -webkit-transform-origin: 50% 50%;
@@ -49,7 +49,7 @@ g1 {
 a {
   text-decoration: none; }
 
-.btn {
+#btn-more {
   display: flex;
   align-self: center;
   margin-top: 50px;
@@ -82,8 +82,7 @@ span.fa-code {
 
 @media (max-width: 700px) {
   h1 {
-    font-size: 4rem;
-    border: 5px solid #CB1957; }
+    font-size: 4rem; }
   .title {
     width: 50px; } }
 
