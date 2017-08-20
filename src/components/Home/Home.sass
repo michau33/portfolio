@@ -1,8 +1,9 @@
 @import '../../mq.sass'
 
-$color: #CB1957
+$pink: #CB1957
+$cyan: #19F3A3
 $color_2: #34495E
-$color_3: #19F3A3
+
 
 $background_1: url( "../../assets/mark.jpg" )
 
@@ -31,7 +32,7 @@ $background_1: url( "../../assets/mark.jpg" )
     font-family: 'Roboto', sans-serif
     font-weight: bold
     text-shadow: 2px 2px 10px black
-    text-shadow: 1px 4px 6px $color, 0 0 0 #000, 1px 4px 6px $color
+    text-shadow: 1px 4px 6px $pink, 0 0 0 #000, 1px 4px 6px $color
     cursor: pointer
 
 g1 
@@ -50,7 +51,7 @@ g1
             display: none
         g1 
             font-family: "Press Start 2P"
-            color: $color_3
+            color: $cyan
             font-size: 3rem
             display: inline
         .fa-code
@@ -66,7 +67,7 @@ a
     box-sizing: border-box
     border: 2px solid crimson
     border-radius: 0px
-    background-color: $color
+    background-color: $pink
     cursor: pointer
     font-family: 'Roboto', sans-serif
     font-size: 1.5rem
@@ -82,14 +83,14 @@ a
         animation: pulse 1s
         box-shadow: 0 0 0 2em rgba(#fff, 0)
         background-color: rgba( $color_2, 0.2 )
-        color: $color
+        color: $pink
 
 @keyframes pulse
     0% 
-        box-shadow: 0 0 0 0 $color
+        box-shadow: 0 0 0 0 $pink
 
 span.fa-code
-    color: $color_3
+    color: $cyan
 
 @media (max-width: 700px)
     h1

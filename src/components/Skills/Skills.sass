@@ -1,11 +1,14 @@
-$bg: url( "../../assets/abstract.jpg" )
+$bg: url( "../../assets/caspar.jpg" )
+$bg_gamedev: url( "../../assets/gaming.jpg")
+
 $js_skill: url( "../../assets/logos/js.png" )
 $unity_skill: url( "../../assets/logos/unity.jpeg" )
 $blender_skill: url( "../../assets/logos/blender.png" )
 
-$color: #CB1957
-$color_2: #34495E
-$color_3: #19F3A3
+$pink: #CB1957
+$cyan: #19F3A3
+$gray: #34495E
+
 
 #bg-skills
     background: $bg
@@ -13,5 +16,39 @@ $color_3: #19F3A3
     background-position: center center
     display: flex
     justify-content: center
+    align-items: center
     height: calc(100vh)
 
+.cards
+    width: 50%
+    height: 80%
+    display: flex
+    justify-content: space-around
+    border: 1px solid green
+
+
+.card
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid yellow
+    width: 50%
+    height: 100%
+
+.card-title
+    font-family: 'Roboto', sans-serif
+    line-height: 40px
+    font-weight: bold
+    color: $cyan
+    text-shadow: 0px 0px 20px $cyan
+
+/* Gamedev card section --------------------- */
+#card-2
+    background: $bg_gamedev
+    background-position: center center
+    background-size: cover
+    
+
+#gamedev
+    color: $pink
+    text-shadow: 0px 0px 20px $pink

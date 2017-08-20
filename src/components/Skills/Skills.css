@@ -1,7 +1,40 @@
 #bg-skills {
-  background: url("../../assets/abstract.jpg");
+  background: url("../../assets/caspar.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: calc(100vh); }
+
+.cards {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green; }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+  width: 50%;
+  height: 100%; }
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  line-height: 40px;
+  font-weight: bold;
+  color: #19F3A3;
+  text-shadow: 0px 0px 20px #19F3A3; }
+
+/* Gamedev card section --------------------- */
+#card-2 {
+  background: url("../../assets/gaming.jpg");
+  background-position: center center;
+  background-size: cover; }
+
+#gamedev {
+  color: #CB1957;
+  text-shadow: 0px 0px 20px #CB1957; }
