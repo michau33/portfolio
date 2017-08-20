@@ -8,21 +8,31 @@
   height: calc(100vh); }
 
 .cards {
+  position: relative;
   width: 80%;
   height: 80%;
   display: flex;
   justify-content: space-around; }
 
 .card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 450px;
   height: 100%;
   cursor: pointer;
   -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75); }
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s; }
 
 .card-title {
   font-family: 'Roboto', sans-serif;
@@ -36,19 +46,23 @@
 #card-1 {
   background: url("../../assets/coding.jpg");
   background-position: center center;
-  background-size: cover;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75); }
+  background-size: cover; }
+  #card-1:hover::after {
+    background: rgba(25, 243, 163, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75); }
 
 /* Gamedev card section --------------------- */
 #card-2 {
   background: url("../../assets/gaming.jpg");
   background-position: center center;
-  background-size: cover;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75); }
+  background-size: cover; }
+  #card-2:hover::after {
+    background: rgba(203, 25, 87, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(203, 25, 87, 0.75); }
 
 #gamedev {
   color: #CB1957;
