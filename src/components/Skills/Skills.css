@@ -1,11 +1,11 @@
-#bg-skills {
+#Skills {
   background: url("../../assets/caspar.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh); }
+  height: 100vh; }
 
 .cards {
   position: relative;
@@ -38,9 +38,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 4rem;
   line-height: 60px;
-  font-weight: bold;
-  color: #19F3A3;
-  text-shadow: 0px 0px 20px #19F3A3; }
+  font-weight: bold; }
 
 /* Frontend card section --------------------- */
 #card-1 {
@@ -52,6 +50,10 @@
     -webkit-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
     -moz-box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75);
     box-shadow: 0px 0px 5px 1px rgba(25, 243, 163, 0.75); }
+
+#frontend {
+  color: #19F3A3;
+  text-shadow: 0px 0px 20px #19F3A3; }
 
 /* Gamedev card section --------------------- */
 #card-2 {
