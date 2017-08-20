@@ -1,5 +1,6 @@
 $bg: url( "../../assets/caspar.jpg" )
 $bg_gamedev: url( "../../assets/gaming.jpg")
+$bg_frontend: url( "../../assets/coding.jpg")
 
 $js_skill: url( "../../assets/logos/js.png" )
 $unity_skill: url( "../../assets/logos/unity.jpeg" )
@@ -20,33 +21,48 @@ $gray: #34495E
     height: calc(100vh)
 
 .cards
-    width: 50%
+    width: 80%
     height: 80%
     display: flex
     justify-content: space-around
-    border: 1px solid green
 
 
 .card
     display: flex
     justify-content: center
     align-items: center
-    border: 1px solid yellow
-    width: 50%
+    width: 500px
     height: 100%
+    cursor: pointer
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75)
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75)
 
 .card-title
     font-family: 'Roboto', sans-serif
-    line-height: 40px
+    font-size: 4rem
+    line-height: 60px
     font-weight: bold
     color: $cyan
     text-shadow: 0px 0px 20px $cyan
+
+/* Frontend card section --------------------- */
+#card-1
+    background: $bg_frontend
+    background-position: center center
+    background-size: cover
+    -webkit-box-shadow: 0px 0px 5px 1px rgba( $cyan, 0.75 )
+    -moz-box-shadow: 0px 0px 5px 1px rgba( $cyan, 0.75 )
+    box-shadow: 0px 0px 5px 1px rgba( $cyan, 0.75 )
 
 /* Gamedev card section --------------------- */
 #card-2
     background: $bg_gamedev
     background-position: center center
     background-size: cover
+    -webkit-box-shadow: 0px 0px 5px 1px rgba( $pink, 0.75 )
+    -moz-box-shadow: 0px 0px 5px 1px rgba( $pink, 0.75 )
+    box-shadow: 0px 0px 5px 1px rgba( $pink, 0.75 )
     
 
 #gamedev
