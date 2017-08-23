@@ -82,9 +82,13 @@
     width: 500px; }
   .card {
     margin-top: 20px; }
-  #frontend {
-    font-size: 2rem;
-    line-height: 40px; }
-  #gamedev {
+  .card-title {
+    padding: 50px 0; }
+  #frontend, #gamedev {
     font-size: 2rem;
     line-height: 40px; } }
+
+@media (max-height: 640px) {
+  #frontend, #gamedev {
+    font-size: 2rem;
+    line-height: 30px; } }

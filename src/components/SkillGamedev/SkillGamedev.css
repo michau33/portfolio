@@ -2,50 +2,39 @@
   background: url(../../assets/gaming.jpg);
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 100%;
+  display: flexbox;
+  justify-content: center;
+  align-content: center; }
+
+.container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  justify-content: center; }
 
-#gamedev-cards {
+.row {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
-  flex-flow: column;
-  margin-top: 50px;
-  height: calc(100vh - 50px);
-  border: 1px solid green; }
+  justify-content: space-between;
+  border: 1px solid yellow;
+  width: 1000px; }
 
-.gamedev-card {
-  display: flex;
-  flex-flow: column;
-  border: 1px solid pink; }
+#unity, #unreal, #blender {
+  height: 250px;
+  width: 250px; }
 
-.logo-image {
-  width: 150px;
-  height: 150px; }
+#unity {
+  background-color: #19F3A3; }
 
-.text-description {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  color: white;
-  display: none; }
+#unreal {
+  background-color: #34495E; }
 
-#unity-card:hover::after {
-  background: rgba(52, 73, 94, 0.1);
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(52, 73, 94, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(52, 73, 94, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(52, 73, 94, 0.75); }
+#blender {
+  background-color: #CB1957; }
 
-#unity-title {
-  color: #fff;
-  text-shadow: 0px 0px 20px #34495E; }
-
-#unity-logo {
-  background: url("../../assets/logos/unity.jpeg");
-  background-size: cover; }
-
-#unity-description {
-  text-shadow: 0px 0px 20px #34495E; }
-
-#unreal-logo {
-  background: url("../../assets/logos/ue_logo.png");
-  background-size: cover; }
+@media (max-width: 1024px) {
+  .row {
+    flex-flow: column;
+    align-items: center; }
+  #unity, #unreal, #blender {
+    margin-top: 50px; } }

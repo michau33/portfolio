@@ -23,13 +23,13 @@ export default class SkillFrontend extends Component {
                                 <div className="rounded-circle" id="reactjs-image" width="250" height="250"></div>
                                 <h2>Reactjs</h2>
                                 <p className="lead">Most fucked up framework.</p>
-                                <a href="" role="button" className="btn btn-primary btn-lg" id="reactjs-button">More</a>
+                                <a href="#reactjs-section" role="button" className="btn btn-primary btn-lg" id="reactjs-button">More</a>
                             </div>
                             <div className="col-sm-12 col-lg-3 frontend-card" id="bootstrap-card">
                                 <div className="rounded-circle" id="bootstrap-image" width="250" height="250"></div>
                                 <h2>Bootstrap</h2>
                                 <p className="lead">Most fucked up css framework.</p>
-                                <a href="" role="button" className="btn btn-primary btn-lg" id="bootstrap-button">More</a>
+                                <a href="#bootstrap-section" role="button" className="btn btn-primary btn-lg" id="bootstrap-button">More</a>
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,7 @@ export default class SkillFrontend extends Component {
                         <div className="row feature-content">
                                 <div className="col-md-6 col-sm-12">
                                     <h6>Reactjs powered this page bitch !</h6>
-                                    <p className="lead">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula
-                                ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                                    <p className="lead">I met react relatively recently.</p>
                                 </div>        
                                 <div className="col-md-5 col-sm-12 col-md-offset-1">
                                     <div id="reactjs-header-image"></div>

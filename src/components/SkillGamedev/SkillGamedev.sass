@@ -11,64 +11,41 @@ $gray: #34495E
     background: $bg_gamedev
     background-size: cover
     background-position: center center
-    height: 100vh
+    height: 100%
+    display: flexbox
+    justify-content: center
+    align-content: center
+
+.container
     display: flex
-    justify-content: flex-start
-    align-items: flex-start
-
-//---------------------------------------
-// Overwriting card style from skills.css
-//---------------------------------------
-
-#gamedev-cards
-    display: flex
-    flex-flow: column
-    margin-top: 50px
-    height: calc(100vh - 50px)
-    border: 1px solid green
-
-.gamedev-card
-    display: flex
-    flex-flow: column
-    border: 1px solid pink
-
-.logo-image
-    width: 150px
-    height: 150px
-
-.text-description
-    font-family: 'Roboto', sans-serif
-    font-size: 3rem
-    color: white
-    display: none
-
-//---------------------------------------
-// Special styling for card about Unity
-//---------------------------------------
-
-#unity-card
-    &:hover::after
-        background: rgba( $gray, 0.1 )
-        -webkit-box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
-        -moz-box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
-        box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
-
-#unity-title
-    color: #fff
-    text-shadow: 0px 0px 20px $gray
-
-#unity-logo
-    background: $unity_skill
-    background-size: cover
-
-#unity-description
-    text-shadow: 0px 0px 20px $gray
-
+    justify-content: center
     
-//---------------------------------------
-// Special styling for card about Unity
-//---------------------------------------
+.row
+    padding-top: 100px
+    padding-bottom: 100px
+    display: flex
+    justify-content: space-between
+    border: 1px solid yellow
+    width: 1000px
 
-#unreal-logo
-    background: $unreal_skill
-    background-size: cover
+#unity, #unreal, #blender
+    height: 250px
+    width: 250px
+
+#unity
+    background-color: $cyan
+    
+#unreal
+    background-color: $gray
+
+#blender
+    background-color: $pink
+   
+@media ( max-width: 1024px )
+    .row
+        flex-flow: column
+        align-items: center
+    #unity, #unreal, #blender
+        margin-top: 50px
+    
+
