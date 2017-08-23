@@ -42,7 +42,7 @@
 
 /* Frontend card section --------------------- */
 #card-1 {
-  background: url("../../assets/coding.jpg");
+  background: url("../../assets/coding_2.jpg");
   background-position: center center;
   background-size: cover; }
   #card-1:hover::after {

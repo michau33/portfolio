@@ -1,11 +1,128 @@
 $bg_frontend: url( "../../assets/coding_2.jpg")
 
+$js_skill: url( "../../assets/logos/js.png" )
+$react_skill: url( "../../assets/logos/reactjs.png" )
+$bootstrap_skill: url( "../../assets/logos/bootstrap.png")
+$unity_skill: url( "../../assets/logos/unity.jpeg" )
+$blender_skill: url( "../../assets/logos/blender.png" )
+
 $pink: #CB1957
 $cyan: #19F3A3
 $gray: #34495E
+$color_reactjs: #00D8FF
+$color_js: #F0DB4F
+$color_bootstrap: #674197
+
+#frontend-container 
+    padding: 150px 0px
+    border: 1px solid pink
+
+#javascript-image
+    background: $js_skill
+    image-size: cover
+    width: 250px
+    height: 250px
 
 #SkillFrontend
     background: $bg_frontend
     background-size: cover
     background-position: center center
     height: 100vh
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+
+// Overwriting card style from skills.sass
+#frontend-cards
+    display: flex
+    flex-flow: column
+    margin-top: 50px
+    height: calc(100vh - 50px)
+    border: 1px solid yellow
+
+.card-container
+    display: flex
+    flex-flow: row
+    height: 100%
+
+.more 
+    padding: 20px
+    border: 1px solid pink
+    font-size: 3rem
+    width: 100%
+
+.frontend-card
+    justify-content: flex-start
+    flex-direction: column    
+
+.logo-image
+    width: 150px
+    height: 150px
+
+.text-description
+    font-family: 'Roboto', sans-serif
+    font-size: 3rem
+    color: white
+    display: none
+    
+
+// Special styling for card about Reactjs
+#reactjs-card
+    &:hover::after
+        background: rgba( $color_reactjs, 0.1 )
+        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
+        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
+        box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
+
+#reactjs-title
+    color: $color_reactjs
+    text-shadow: 0px 0px 20px $color_reactjs
+
+#reactjs-logo
+    background: $react_skill
+    background-size: cover
+
+#reactjs-description
+    text-shadow: 0px 0px 20px $color_reactjs
+
+// Special styling for card about Javascript
+#js-card
+    &:hover::after
+        background: rgba( $color_js, .1 )
+        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
+        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
+        box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
+
+#js-title
+    top: 0px
+    color: $color_js
+    text-shadow: 0px 0px 20px $color_js
+
+#js-logo
+    background: $js_skill
+    background-size: cover
+
+#js-description
+    text-shadow: 0px 0px 20px $color_js
+
+// Special styling for card about Bootstrap
+#bootstrap-card
+    &:hover::after
+        background: rgba( $color_bootstrap, .1 )
+        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
+        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
+        box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
+
+
+#bootstrap-title
+    color: $color_bootstrap
+    text-shadow: 0px 0px 20px $color_bootstrap
+
+#bootstrap-logo
+    background: $bootstrap_skill
+    background-size: cover
+
+#bootstrap-description
+    text-shadow: 0px 0px 20px $color_bootstrap
+
+    

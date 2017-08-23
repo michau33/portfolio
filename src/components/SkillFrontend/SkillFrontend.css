@@ -1,5 +1,102 @@
+#frontend-container {
+  padding: 150px 0px;
+  border: 1px solid pink; }
+
+#javascript-image {
+  background: url("../../assets/logos/js.png");
+  image-size: cover;
+  width: 250px;
+  height: 250px; }
+
 #SkillFrontend {
   background: url("../../assets/coding_2.jpg");
   background-size: cover;
   background-position: center center;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+#frontend-cards {
+  display: flex;
+  flex-flow: column;
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  border: 1px solid yellow; }
+
+.card-container {
+  display: flex;
+  flex-flow: row;
+  height: 100%; }
+
+.more {
+  padding: 20px;
+  border: 1px solid pink;
+  font-size: 3rem;
+  width: 100%; }
+
+.frontend-card {
+  justify-content: flex-start;
+  flex-direction: column; }
+
+.logo-image {
+  width: 150px;
+  height: 150px; }
+
+.text-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  color: white;
+  display: none; }
+
+#reactjs-card:hover::after {
+  background: rgba(0, 216, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75); }
+
+#reactjs-title {
+  color: #00D8FF;
+  text-shadow: 0px 0px 20px #00D8FF; }
+
+#reactjs-logo {
+  background: url("../../assets/logos/reactjs.png");
+  background-size: cover; }
+
+#reactjs-description {
+  text-shadow: 0px 0px 20px #00D8FF; }
+
+#js-card:hover::after {
+  background: rgba(240, 219, 79, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75); }
+
+#js-title {
+  top: 0px;
+  color: #F0DB4F;
+  text-shadow: 0px 0px 20px #F0DB4F; }
+
+#js-logo {
+  background: url("../../assets/logos/js.png");
+  background-size: cover; }
+
+#js-description {
+  text-shadow: 0px 0px 20px #F0DB4F; }
+
+#bootstrap-card:hover::after {
+  background: rgba(103, 65, 151, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75); }
+
+#bootstrap-title {
+  color: #674197;
+  text-shadow: 0px 0px 20px #674197; }
+
+#bootstrap-logo {
+  background: url("../../assets/logos/bootstrap.png");
+  background-size: cover; }
+
+#bootstrap-description {
+  text-shadow: 0px 0px 20px #674197; }

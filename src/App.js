@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import './App.css';
+import './App.css'; 
 
 import Footer from './components/Footer/Footer.js';
 import SkillFrontend from './components/SkillFrontend/SkillFrontend.js';
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Route path="/home" exact={ true } component={ Home }></Route>
+        <Route exact path="/" component={ Home }></Route>
         <Route path="/skills" component={ Skills }></Route>
         <Route path="/frontend" component={ SkillFrontend }></Route>
         <Route path="/gamedev" component={ SkillGamedev }></Route>

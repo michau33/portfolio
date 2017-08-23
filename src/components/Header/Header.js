@@ -7,7 +7,7 @@ export default class Header extends Component {
     render() {
         return(
             <nav>
-                <Link to="home" style={{ textDecoration: 'none' }}><span className="fa fa-home nav-icon"></span></Link>
+                <Link to="/" style={{ textDecoration: 'none' }}><span className="fa fa-home nav-icon"></span></Link>
                 <div className="brand">    
                     <span className="typewriter">   
                         <TypeWriter typing={ 1 } fixed={true} minDelay={ 50 } maxDelay={ 300 }>

@@ -1,5 +1,8 @@
 $bg_gamedev: url( ../../assets/gaming.jpg )
 
+$unity_skill: url( "../../assets/logos/unity.jpeg" )
+$unreal_skill: url( "../../assets/logos/ue_logo.png" )
+
 $pink: #CB1957
 $cyan: #19F3A3
 $gray: #34495E
@@ -9,3 +12,63 @@ $gray: #34495E
     background-size: cover
     background-position: center center
     height: 100vh
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+
+//---------------------------------------
+// Overwriting card style from skills.css
+//---------------------------------------
+
+#gamedev-cards
+    display: flex
+    flex-flow: column
+    margin-top: 50px
+    height: calc(100vh - 50px)
+    border: 1px solid green
+
+.gamedev-card
+    display: flex
+    flex-flow: column
+    border: 1px solid pink
+
+.logo-image
+    width: 150px
+    height: 150px
+
+.text-description
+    font-family: 'Roboto', sans-serif
+    font-size: 3rem
+    color: white
+    display: none
+
+//---------------------------------------
+// Special styling for card about Unity
+//---------------------------------------
+
+#unity-card
+    &:hover::after
+        background: rgba( $gray, 0.1 )
+        -webkit-box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
+        -moz-box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
+        box-shadow: 0px 0px 5px 1px rgba( $gray, 0.75 )
+
+#unity-title
+    color: #fff
+    text-shadow: 0px 0px 20px $gray
+
+#unity-logo
+    background: $unity_skill
+    background-size: cover
+
+#unity-description
+    text-shadow: 0px 0px 20px $gray
+
+    
+//---------------------------------------
+// Special styling for card about Unity
+//---------------------------------------
+
+#unreal-logo
+    background: $unreal_skill
+    background-size: cover
