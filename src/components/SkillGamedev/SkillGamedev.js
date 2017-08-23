@@ -9,6 +9,11 @@ export default class SkillGamedev extends Component {
                 <section id="tools">
                     <div className="container" id="gamedev-cards">
                         <div className="row">
+                            <div class="" id="unity"><h1>Unity</h1></div>
+                            <div class="" id="unreal"><h1>Unreal</h1></div>
+                            <div class="" id="blender"><h1>Blender</h1></div>
+                        </div>
+                        <div className="row">
                             <div class="" id="unity">Unity</div>
                             <div class="" id="unreal">Unreal</div>
                             <div class="" id="blender">Blender</div>

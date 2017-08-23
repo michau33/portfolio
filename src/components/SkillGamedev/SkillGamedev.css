@@ -9,7 +9,8 @@
 
 .container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-flow: column; }
 
 .row {
   padding-top: 100px;
@@ -17,20 +18,65 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid yellow;
-  width: 1000px; }
+  width: 100%; }
 
 #unity, #unreal, #blender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 250px;
-  width: 250px; }
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 200px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 45px 8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 45px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 45px 8px rgba(0, 0, 0, 0.75); }
+
+#unity h1, #unreal h1, #blender h1 {
+  font-family: 'press start 2p', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; }
 
 #unity {
-  background-color: #19F3A3; }
+  background-color: #242B34;
+  opacity: 0.8;
+  transition: opacity 1s, background 1s, box-shadow .5s; }
+  #unity:hover {
+    -webkit-box-shadow: 0px 0px 1px 20px #242b34;
+    -moz-box-shadow: 0px 0px 1px 20px #242b34;
+    box-shadow: 0px 0px 1px 20px #242b34;
+    background-image: url("../../assets/logos/unity.jpeg");
+    opacity: 1; }
+    #unity:hover h1 {
+      display: none; }
 
 #unreal {
-  background-color: #34495E; }
+  background-color: #242B34;
+  opacity: 0.8;
+  transition: opacity 1s, background 1s, box-shadow 0.5s; }
+  #unreal:hover {
+    -webkit-box-shadow: 0px 0px 1px 20px #221e1f;
+    -moz-box-shadow: 0px 0px 1px 20px #221e1f;
+    box-shadow: 0px 0px 1px 20px #221e1f;
+    background-image: url("../../assets/logos/ue_logo.png");
+    opacity: 1; }
+    #unreal:hover h1 {
+      display: none; }
 
 #blender {
-  background-color: #CB1957; }
+  background-color: #242B34;
+  opacity: 0.8;
+  transition: opacity 1s, background 1s, box-shadow .5s; }
+  #blender:hover {
+    -webkit-box-shadow: 0px 0px 1px 20px white;
+    -moz-box-shadow: 0px 0px 1px 20px white;
+    box-shadow: 0px 0px 1px 20px white;
+    background-image: url("../../assets/logos/blender.png");
+    opacity: 1; }
+    #blender:hover h1 {
+      display: none; }
 
 @media (max-width: 1024px) {
   .row {

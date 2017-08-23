@@ -2,6 +2,7 @@ $bg_gamedev: url( ../../assets/gaming.jpg )
 
 $unity_skill: url( "../../assets/logos/unity.jpeg" )
 $unreal_skill: url( "../../assets/logos/ue_logo.png" )
+$blender_skill: url( "../../assets/logos/blender.png" )
 
 $pink: #CB1957
 $cyan: #19F3A3
@@ -19,6 +20,7 @@ $gray: #34495E
 .container
     display: flex
     justify-content: center
+    flex-flow: column
     
 .row
     padding-top: 100px
@@ -26,20 +28,66 @@ $gray: #34495E
     display: flex
     justify-content: space-between
     border: 1px solid yellow
-    width: 1000px
+    width: 100%
 
 #unity, #unreal, #blender
+    display: flex
+    justify-content: center
+    align-items: center
     height: 250px
     width: 250px
+    background-color: rgba( 255, 255, 255, 0.2 )
+    border-radius: 200px
+    cursor: pointer
+    -webkit-box-shadow: 0px 5px 45px 8px rgba( black, 0.75 )
+    -moz-box-shadow: 0px 5px 45px 8px rgba( black, 0.75 )
+    box-shadow: 0px 5px 45px 8px rgba( black, 0.75 )
+
+#unity h1, #unreal h1, #blender h1
+    font-family: 'press start 2p', sans-serif
+    font-size: 2rem
+    font-weight: bold
+    color: white
+    
 
 #unity
-    background-color: $cyan
-    
+    background-color: #242B34
+    opacity: 0.8
+    transition: opacity 1s, background 1s, box-shadow .5s
+    &:hover
+        -webkit-box-shadow: 0px 0px 1px 20px rgba( #242B34, 1 )
+        -moz-box-shadow: 0px 0px 1px 20px rgba( #242B34, 1)
+        box-shadow: 0px 0px 1px 20px rgba( #242B34, 1 )
+        background-image: $unity_skill
+        opacity: 1
+        & h1
+            display: none
+
 #unreal
-    background-color: $gray
+    background-color: #242B34
+    opacity: 0.8
+    transition: opacity 1s, background 1s, box-shadow 0.5s
+    &:hover
+        -webkit-box-shadow: 0px 0px 1px 20px rgba( #221E1F, 1 )
+        -moz-box-shadow: 0px 0px 1px 20px rgba( #221E1F, 1)
+        box-shadow: 0px 0px 1px 20px rgba( #221E1F, 1 )
+        background-image: $unreal_skill
+        opacity: 1
+        & h1
+            display: none
 
 #blender
-    background-color: $pink
+    background-color: #242B34
+    opacity: 0.8
+    transition: opacity 1s, background 1s, box-shadow .5s
+    &:hover
+        -webkit-box-shadow: 0px 0px 1px 20px rgba( white, 1 )
+        -moz-box-shadow: 0px 0px 1px 20px rgba( white, 1)
+        box-shadow: 0px 0px 1px 20px rgba( white, 1 )
+        background-image: $blender_skill
+        opacity: 1
+        & h1
+            display: none
    
 @media ( max-width: 1024px )
     .row
