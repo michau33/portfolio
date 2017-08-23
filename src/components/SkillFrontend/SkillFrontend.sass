@@ -6,6 +6,10 @@ $bootstrap_skill: url( "../../assets/logos/bootstrap.png")
 $unity_skill: url( "../../assets/logos/unity.jpeg" )
 $blender_skill: url( "../../assets/logos/blender.png" )
 
+$background: url( "../../assets/books.jpg" )
+$background_2: url( '../../assets/sabri.jpg' )
+$background_3: url( '../../assets/colorful_laptop.jpg' )
+
 $pink: #CB1957
 $cyan: #19F3A3
 $gray: #34495E
@@ -13,116 +17,146 @@ $color_reactjs: #00D8FF
 $color_js: #F0DB4F
 $color_bootstrap: #674197
 
+
+.frontend-card
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: center
+    padding: 20px 10px
+    margin: 0 40px
+    -webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.75);
+
+#frontend-background
+    background: $bg_frontend
+    background-size: cover
+    height: 100%
+
 #frontend-container 
     padding: 150px 0px
-    border: 1px solid pink
+    height: 100%
 
-#javascript-image
+.row
+    display: flex
+    justify-content: center
+
+h2
+    font-family: 'Roboto', sans-serif
+    font-weight: bold
+    padding: 20px 0
+
+h6 
+    text-transform: uppercase  
+    font-weight: bold
+    font-size: 0.8rem
+    letter-spacing: 0.1rem
+
+.feature-content
+    display: flex
+    padding: 50px 0px
+
+.btn
+    font-family: 'roboto', sans-serif
+    border: none
+    color: black
+    border-radius: 0px
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+
+//-----------------------------------------//
+// Javascript styling section              
+//-----------------------------------------//
+
+#js-section
+    background: $color_js
+
+#js-image
     background: $js_skill
     image-size: cover
     width: 250px
     height: 250px
 
-#SkillFrontend
-    background: $bg_frontend
+#js-card 
+    background: rgba( $color_js, .2 )
+
+#js-button
+    background-color: $color_js
+
+#js-header-image
+    background: $background
     background-size: cover
-    background-position: center center
-    height: 100vh
-    display: flex
-    justify-content: flex-start
-    align-items: flex-start
-
-// Overwriting card style from skills.sass
-#frontend-cards
-    display: flex
-    flex-flow: column
-    margin-top: 50px
-    height: calc(100vh - 50px)
-    border: 1px solid yellow
-
-.card-container
-    display: flex
-    flex-flow: row
-    height: 100%
-
-.more 
-    padding: 20px
+    width: 560px
+    height: 315px
     border: 1px solid pink
-    font-size: 3rem
-    width: 100%
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 
-.frontend-card
-    justify-content: flex-start
-    flex-direction: column    
 
-.logo-image
-    width: 150px
-    height: 150px
+//-----------------------------------------//
+// Reactjs styling section
+//-----------------------------------------//
 
-.text-description
-    font-family: 'Roboto', sans-serif
-    font-size: 3rem
+#reactjs-section
+    background-color: #222222
     color: white
-    display: none
+
+#reactjs-image
+    background: $react_skill
+    image-size: cover
+    width: 250px
+    height: 250px
+
+#reactjs-card
+    background: rgba( $color_reactjs, .2 )
+
+#reactjs-button
+    background-color: $color_reactjs
+
+#reactjs-header-image
+    background: $background_2
+    background-size: cover
+    width: 560px
+    height: 315px
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+
+//-----------------------------------------//
+// Bootstrap styling section
+//-----------------------------------------//
+
+#bootstrap-section
+    background-color: $color_bootstrap
+    color: #222222
+
+#bootstrap-image
+    background: $bootstrap_skill
+    image-size: cover
+    width: 250px
+    height: 250px
+
+#bootstrap-card
+    background: rgba( $color_bootstrap, .2 )
+
+#bootstrap-button
+    background-color: $color_bootstrap
+
+#bootstrap-header-image
+    background: $background_3
+    background-size: cover
+    width: 560px
+    height: 315px
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+
     
 
-// Special styling for card about Reactjs
-#reactjs-card
-    &:hover::after
-        background: rgba( $color_reactjs, 0.1 )
-        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
-        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
-        box-shadow: 0px 0px 5px 1px rgba( $color_reactjs, 0.75 )
-
-#reactjs-title
-    color: $color_reactjs
-    text-shadow: 0px 0px 20px $color_reactjs
-
-#reactjs-logo
-    background: $react_skill
-    background-size: cover
-
-#reactjs-description
-    text-shadow: 0px 0px 20px $color_reactjs
-
-// Special styling for card about Javascript
-#js-card
-    &:hover::after
-        background: rgba( $color_js, .1 )
-        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
-        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
-        box-shadow: 0px 0px 5px 1px rgba( $color_js, 0.75 )
-
-#js-title
-    top: 0px
-    color: $color_js
-    text-shadow: 0px 0px 20px $color_js
-
-#js-logo
-    background: $js_skill
-    background-size: cover
-
-#js-description
-    text-shadow: 0px 0px 20px $color_js
-
-// Special styling for card about Bootstrap
-#bootstrap-card
-    &:hover::after
-        background: rgba( $color_bootstrap, .1 )
-        -webkit-box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
-        -moz-box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
-        box-shadow: 0px 0px 5px 1px rgba( $color_bootstrap, 0.75 )
 
 
-#bootstrap-title
-    color: $color_bootstrap
-    text-shadow: 0px 0px 20px $color_bootstrap
-
-#bootstrap-logo
-    background: $bootstrap_skill
-    background-size: cover
-
-#bootstrap-description
-    text-shadow: 0px 0px 20px $color_bootstrap
 
     

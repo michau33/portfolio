@@ -1,102 +1,122 @@
+.frontend-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  margin: 0 40px;
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.75); }
+
+#frontend-background {
+  background: url("../../assets/coding_2.jpg");
+  background-size: cover;
+  height: 100%; }
+
 #frontend-container {
   padding: 150px 0px;
-  border: 1px solid pink; }
+  height: 100%; }
 
-#javascript-image {
+.row {
+  display: flex;
+  justify-content: center; }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding: 20px 0; }
+
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem; }
+
+.feature-content {
+  display: flex;
+  padding: 50px 0px; }
+
+.btn {
+  font-family: 'roboto', sans-serif;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75); }
+
+#js-section {
+  background: #F0DB4F; }
+
+#js-image {
   background: url("../../assets/logos/js.png");
   image-size: cover;
   width: 250px;
   height: 250px; }
 
-#SkillFrontend {
-  background: url("../../assets/coding_2.jpg");
+#js-card {
+  background: rgba(240, 219, 79, 0.2); }
+
+#js-button {
+  background-color: #F0DB4F; }
+
+#js-header-image {
+  background: url("../../assets/books.jpg");
   background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; }
-
-#frontend-cards {
-  display: flex;
-  flex-flow: column;
-  margin-top: 50px;
-  height: calc(100vh - 50px);
-  border: 1px solid yellow; }
-
-.card-container {
-  display: flex;
-  flex-flow: row;
-  height: 100%; }
-
-.more {
-  padding: 20px;
+  width: 560px;
+  height: 315px;
   border: 1px solid pink;
-  font-size: 3rem;
-  width: 100%; }
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75); }
 
-.frontend-card {
-  justify-content: flex-start;
-  flex-direction: column; }
+#reactjs-section {
+  background-color: #222222;
+  color: white; }
 
-.logo-image {
-  width: 150px;
-  height: 150px; }
-
-.text-description {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  color: white;
-  display: none; }
-
-#reactjs-card:hover::after {
-  background: rgba(0, 216, 255, 0.1);
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(0, 216, 255, 0.75); }
-
-#reactjs-title {
-  color: #00D8FF;
-  text-shadow: 0px 0px 20px #00D8FF; }
-
-#reactjs-logo {
+#reactjs-image {
   background: url("../../assets/logos/reactjs.png");
-  background-size: cover; }
+  image-size: cover;
+  width: 250px;
+  height: 250px; }
 
-#reactjs-description {
-  text-shadow: 0px 0px 20px #00D8FF; }
+#reactjs-card {
+  background: rgba(0, 216, 255, 0.2); }
 
-#js-card:hover::after {
-  background: rgba(240, 219, 79, 0.1);
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(240, 219, 79, 0.75); }
+#reactjs-button {
+  background-color: #00D8FF; }
 
-#js-title {
-  top: 0px;
-  color: #F0DB4F;
-  text-shadow: 0px 0px 20px #F0DB4F; }
+#reactjs-header-image {
+  background: url("../../assets/sabri.jpg");
+  background-size: cover;
+  width: 560px;
+  height: 315px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75); }
 
-#js-logo {
-  background: url("../../assets/logos/js.png");
-  background-size: cover; }
+#bootstrap-section {
+  background-color: #674197;
+  color: #222222; }
 
-#js-description {
-  text-shadow: 0px 0px 20px #F0DB4F; }
-
-#bootstrap-card:hover::after {
-  background: rgba(103, 65, 151, 0.1);
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(103, 65, 151, 0.75); }
-
-#bootstrap-title {
-  color: #674197;
-  text-shadow: 0px 0px 20px #674197; }
-
-#bootstrap-logo {
+#bootstrap-image {
   background: url("../../assets/logos/bootstrap.png");
-  background-size: cover; }
+  image-size: cover;
+  width: 250px;
+  height: 250px; }
 
-#bootstrap-description {
-  text-shadow: 0px 0px 20px #674197; }
+#bootstrap-card {
+  background: rgba(103, 65, 151, 0.2); }
+
+#bootstrap-button {
+  background-color: #674197; }
+
+#bootstrap-header-image {
+  background: url("../../assets/colorful_laptop.jpg");
+  background-size: cover;
+  width: 560px;
+  height: 315px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75); }
