@@ -7,8 +7,6 @@ export default class Skills extends Component {
     render() {
         return(
             <section id="Skills">
-                <div className="container">
-                    <div className="row">
                         <div className="cards">
                             
                             <Link to="frontend" style={{ textDecoration: 'none' }}>
@@ -27,8 +25,6 @@ export default class Skills extends Component {
                                 </div>  
                             </Link>
                         </div>
-                    </div>
-                </div>
             </section>    
         );
     }

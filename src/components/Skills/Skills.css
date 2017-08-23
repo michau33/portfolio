@@ -5,19 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; }
-
-.container {
-  display: flex;
-  justify-content: center;
-  height: 900px;
-  border: 1px solid yellow;
-  padding: 60px 0; }
+  height: 100vh; }
 
 .cards {
   position: relative;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between;
+  height: 80%;
+  width: 1000px;
+  border: 1px solid yellow; }
 
 .card {
   position: relative;
@@ -74,3 +70,21 @@
 #gamedev {
   color: #CB1957;
   text-shadow: 0px 0px 20px #CB1957; }
+
+@media (max-width: 1024px) {
+  #Skills {
+    height: 100%; }
+  .cards {
+    flex-flow: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 500px; }
+  .card {
+    margin-top: 20px; }
+  #frontend {
+    font-size: 2rem;
+    line-height: 40px; }
+  #gamedev {
+    font-size: 2rem;
+    line-height: 40px; } }
